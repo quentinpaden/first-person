@@ -1,8 +1,8 @@
 <html>
   <head>
+    <!----Aframe Plugins---->
     <script src="https://cdn.jsdelivr.net/npm/aframe-scene@1.0.3/dist/aframe-master.min.js"></script>
 
-    
     <script src="https://cdn.jsdelivr.net/npm/aframe-camera-cube-env@1.1.0/camera-cube-env.js"></script>
     
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.0.1/dist/aframe-extras.min.js"></script>
@@ -13,9 +13,9 @@
     
     <script src="https://cdn.jsdelivr.net/npm/aframe-mouse-rotate@1.1.0/mouse-rotate.js"></script>
 
-    
     <script src="https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.min.js"></script>
 
+    <!----Verse Gameplay Scripts---->
     <script>
       AFRAME.registerComponent('fuckbullshit', {
         init: function () {
@@ -54,24 +54,27 @@
       });
     </script>
   </head>
+
+  
+  <!----Verse Game Scene---->
   <body>
       <a-scene 
         renderer="antialias: true; logarithmicDepthBuffer; true;"
-        physics="gravity:0; debug:true;"
+        physics="gravity:0;"
         vr-mode-ui="enabled: false"
         loading-screen="enabled: false">
 
-        
         <!----3D Skybox---->
-	<a-sky 
-    src=""
-    id="sky" 
-    material=" 
-      side: back; 
-      shader: skyshader; 
-      sunPosition: 17 30 27;">
-	</a-sky>
-
+        <a-sky 
+          id="Skybox"
+          src="" 
+          material=" 
+            side: back; 
+            shader: skyshader; 
+            sunPosition: 17 30 27;">
+        </a-sky>
+        
+        <!----Camera Controls---->
         <a-entity 
           id="Game_Camera" 
           position="0 0 6"
@@ -108,7 +111,8 @@
           position="0 0 4" 
           gltf-model="https://firebasestorage.googleapis.com/v0/b/timbre-d11e2.appspot.com/o/assets%2F8677a6d7-b46c-47ee-ab50-bae003b24348.glb?alt=media&token=1fb3d4a4-6b07-4c2a-8573-87d9dcbf9a14">
         </a-entity>
-
+        
+        <!--Game Enemy -->
         <a-entity 
           id="tesut" 
           animation-mixer="Idle"
@@ -119,7 +123,6 @@
           gltf-model="https://firebasestorage.googleapis.com/v0/b/timbre-d11e2.appspot.com/o/assets%2F0a8bbe82-e708-45b5-a836-ba02a8322914.glb?alt=media&token=2d6c8e54-fb84-4840-94dc-0af3a37cb534">
         </a-entity>
         </a-box>
-
 
         <!--Game Navigation-->
         <a-entity 

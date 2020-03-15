@@ -1,38 +1,74 @@
+
+------------------------------------------------------------------------
+
 Core Gameplay Pillars:
 
+------------------------------------------------------------------------
+
+  Crossplatform Multiplatform
+  - Itchio + Google Firebase Signin + Paypal (In App Purchases) [PC/MOBILE]
+  - Itchio + Patreon (Membership Subscription) [PC/MOBILE] 
+
+  - Google Play [Android Phone/Android Tablet/Chromebook]
+  - iPhone App Store [iPhone]
+  - iPad App Store [iPad]
+  - Mac OSx App Store [Macbook Laptop, iMac Desktop, Mac Mini]
+  - Microsoft App Store [Windows Laptop, Windows Desktop, Windows Tablet]
+  - Steam Wallet [Windows/Mac]
+
+------------------------------------------------------------------------
+
+Performance:
+  - 512 or 1024 resolution all models
+  - Less than 5 sec load time
+  - No slow code functions
+  - Above 30fps
+
+------------------------------------------------------------------------
+
 Combat
-- Player Controls
-- Enemy AI
-- Unisex Player
-- Magic Combat Abilities available after beating game from npc
+  - Player Controls
+  - Enemy AI
+  - Unisex Player
+  - Magic Combat Abilities available after beating game from npc
+
+------------------------------------------------------------------------
 
 Hearth
-- Hearth (Home) not only on Earth
-- Customize home with images and music
+  - Hearth (Home) not only on Earth
+  - Customize home with images and music
 
 House Monetization
-- Purchases/Upgrade other settlements to connect them and make them larger
-- Purchase/Upgrade to upload custom in house 3d models and 360 sky 
-- Purchase House Domain Name for links
+  - Purchases/Upgrade other settlements to connect them and make them larger
+  - Purchase/Upgrade to upload custom in house 3d models and 360 sky 
+  - Purchase House Domain Name for links
 
 Settlement Monetization
-- Purchase/Upgrade to get underground Settlements with customizable sims like vroid living in there and the ability to customize them (male/female)
-- Purchase/Upgrade to get synchronus multiplayer
+  - Purchase/Upgrade to get underground Settlements with customizable sims like vroid living in there and the ability to customize them (male/female)
+  - Purchase/Upgrade to get synchronus multiplayer
+
+------------------------------------------------------------------------
 
 Interconnected Open Exploration
-- Tropical Desert
-- Portal to Moon
+  - Tropical Desert
+  - Portal to Moon
 
-- Inside Underground Moon
-- Forest in Moon (Underground Forest)
+  - Inside Underground Moon
+  - Forest in Moon (Underground Forest)
 
-- Portal to Antartica (Snow Desert Tundra)
-- Underground Antartica (Cave Snow Forest)
+  - Portal to Antartica (Snow Desert Tundra)
+  - Underground Antartica (Cave Snow Forest)
 
-- Portal to Mars
-- Martian Desert
-- Martian Forest
-- Underground Mars Forest
+  - Portal to Mars
+  - Martian Desert
+  - Martian Forest
+  - Underground Mars Forest
 
-- Portal Back to Earth Desert Underground
-- Tropical Desert
+  - Portal Back to Earth Desert Underground
+  - Tropical Desert
+
+------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------

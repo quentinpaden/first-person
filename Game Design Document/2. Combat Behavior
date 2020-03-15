@@ -1,0 +1,69 @@
+
+
+------------------------------------------------------------------------
+
+CONTROLS
+  Touchscreen:
+    Movement
+      - One Touch to move forward
+      - Two Touch move backwards
+      - Swipe to turn character
+    Combat
+      - One Touch to attack if near enemy and looking at them
+      - Two Touch to block if near enemy and looking at them
+      - Different Block Animations
+    Interaction
+      - One Touch to interact with object if near and looking at it
+
+  Keyboard & Mouse:
+    Movement:
+      - W-A-S-D & Arrow Button (Forward-Left-Down-Right)
+      - Mouse Movement to look around
+    Combat
+      - Left Click to Attack
+      - Right to Block 
+      - Different Block Animations
+    Interaction
+      - Left Click to interact with objects when near
+
+-----------------------------------------------------------------------
+
+  User Interface:
+  - Player Health
+  - Hearts
+  - Recharge on Level    
+
+-----------------------------------------------------------------------
+
+ENEMY A.I BEHAVIOR:
+  Patrol
+    - Idle and walk loop before player is target
+
+  Follow Player
+    - Run
+    - Walk
+
+  Combo Player
+    - Follow player then combo while in certain range
+
+  Block Player
+    - If getting hit to many times block, then dodge, then combo 
+    - If getting hit to many times block, then combo
+
+  Get hit by player without poise
+    - Choose Play hit 1 animation 
+    - Or Choose Play hit 2 animation 
+
+  Get hit by player while blocking
+    - If hit while blocking play animation called blockhit
+
+  Defeated
+    - If enemy health all the way down play defeated animation
+  Ranged Behavior 
+    - Blast Player, Dodge Away, Blast again
+
+  Dodge Player
+    - When getting hit to many times or doing to many hits to player randomly dodge left/right to provide challenge to player and 
+    - Always have follow up attack after
+
+-----------------------------------------------------------------------
