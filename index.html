@@ -17,7 +17,7 @@
 
     <!----Verse Gameplay Scripts---->
     <script>
-      AFRAME.registerComponent('fuckbullshit', {
+      AFRAME.registerComponent('no-occlusion', {
         init: function () {
             this.el.addEventListener("model-loaded", (e)=>{
             var obj = this.el.getObject3D('mesh');
@@ -26,7 +26,6 @@
                 object.frustumCulled = false;
 
             } );
-            console.log("fuckkkkkkkkkkkkkkkkkkkkkk");
           })
         }
       });
@@ -76,7 +75,7 @@
         
         <!----Camera Controls---->
         <a-entity 
-          id="Game_Camera" 
+          id="Player" 
           position="0 0 6"
           movement-controls="speed:0.25; fly:false; constrainToNavMesh: true;"
           >
@@ -84,18 +83,19 @@
               id="Camera"
               camera 
               controller
-              position="0 1 3" 
+              position="0 1.3 3" 
               cursor="rayOrgin:mouse; fuse:false;"
               look-controls="reverseTouchDrag: true;">
                             
                   <a-entity 
-                    id="test" 
+                    id="Weapon" 
                     shadow
-                    animation-mixer="clip:PlayerBlock;"
+                    camera-cube-env="resolution:100;"
+                    animation-mixer="clip:PlayerAttack;"
                     scale=".03 .03 .03" 
-                    rotation="0 0 0" 
-                    position="0 0 -.2" 
-                    gltf-model="https://firebasestorage.googleapis.com/v0/b/timbre-d11e2.appspot.com/o/assets%2F6fec6ea0-06b1-42f8-8130-75cae9d43558.glb?alt=media&token=87458427-0c32-47be-90fb-cad9928888e4">
+                    rotation="-90 0 0" 
+                    position="0 0 0" 
+                    gltf-model="https://firebasestorage.googleapis.com/v0/b/timbre-d11e2.appspot.com/o/assets%2F88578100-bfbf-44eb-b73a-542a12d671b8.glb?alt=media&token=1950ba3a-836c-478a-b801-c88985993e55">
                   </a-entity>
                   <a-cursor fuse="false">
                   </a-cursor>
@@ -114,13 +114,13 @@
         
         <!--Game Enemy -->
         <a-entity 
-          id="tesut" 
-          animation-mixer="Idle"
-          fuckbullshit
-          scale="3 3 3" 
+          id="Enemy" 
+          animation-mixer="clip:Idle;"
+          no-occlusion
+          scale="1.3 1.3 1.3" 
           rotation="0 0 0" 
-          position="0 0 4" 
-          gltf-model="https://firebasestorage.googleapis.com/v0/b/timbre-d11e2.appspot.com/o/assets%2F0a8bbe82-e708-45b5-a836-ba02a8322914.glb?alt=media&token=2d6c8e54-fb84-4840-94dc-0af3a37cb534">
+          position="0 -.3 4" 
+          gltf-model="https://firebasestorage.googleapis.com/v0/b/timbre-d11e2.appspot.com/o/assets%2F495de0c0-00d4-46db-9c3b-5a9b975ea010.glb?alt=media&token=4fd3f269-1636-44e7-91a3-f842896c21c3">
         </a-entity>
         </a-box>
 
@@ -136,9 +136,9 @@
         </a-entity>
 
         <!-- Default lighting injected by A-Frame. -->
-        <a-entity id="Ambient" light="type: ambient; color: #FFF; intensity: 0.9" position="5 4 3"></a-entity>
+        <a-entity id="Ambient" light="type: ambient; color: #FFF; intensity: 1" position="5 4 3"></a-entity>
         <a-entity  id="Point" light="type: point; color: #FFF; intensity: 0.4" position="1 3 -8"></a-entity>
-        <a-entity id="Direction" light="type: directional; color: #FFF; intensity: 0.3; " position="-0.5 1 1"></a-entity>
+        <a-entity id="Direction" light="type: directional; color: #FFF; intensity: 0.7; " position="-0.5 1 1"></a-entity>
         
       </a-scene>
   </body>
