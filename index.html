@@ -117,11 +117,12 @@
         <!--Game World-->
         <a-entity 
           id="World" 
+          camera-cube-env="resolution:100;"
           static-body="shape: box;"
-          scale="4 4 4" 
+          scale="1 1 1" 
           rotation="0 0 0" 
           position="0 0 4" 
-          gltf-model="https://firebasestorage.googleapis.com/v0/b/timbre-d11e2.appspot.com/o/assets%2F8677a6d7-b46c-47ee-ab50-bae003b24348.glb?alt=media&token=1fb3d4a4-6b07-4c2a-8573-87d9dcbf9a14">
+          gltf-model="https://firebasestorage.googleapis.com/v0/b/timbre-d11e2.appspot.com/o/assets%2F135f7bab-588a-416c-bf92-9414a392ee11.glb?alt=media&token=555fef7a-89e8-44bc-bf41-ad602bbcda3e">
         </a-entity>
 
         <!--Game Navigation-->
@@ -136,7 +137,7 @@
         </a-entity>
 
         <!-- Default lighting injected by A-Frame. -->
-        <a-entity id="Ambient" light="type: ambient; color: #FFF; intensity: 1" position="5 4 3"></a-entity>
+        <a-entity id="Ambient" light="type: ambient; color: #FFF; intensity: 0.5" position="5 4 3"></a-entity>
         <a-entity  id="Point" light="type: point; color: #FFF; intensity: 0.4" position="1 3 -8"></a-entity>
         <a-entity id="Direction" light="type: directional; color: #FFF; intensity: 0.7; " position="-0.5 1 1"></a-entity>
         
